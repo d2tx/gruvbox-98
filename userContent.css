@@ -354,7 +354,17 @@
         color: #ebdbb2 !important;
         border: none !important;
         border-color: #504945 !important;
+        outline: none !important;
         box-shadow: var(--95concave) !important;
+        -moz-appearance: none !important;
+    }
+    input.filter {
+        background-color: #1d2021 !important;
+        color: #ebdbb2 !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: var(--95concave) !important;
+        -moz-appearance: none !important;
     }
     header {
         background-color: #282828 !important;
