@@ -260,12 +260,121 @@
     .support-page {
         color: #689d6a !important;
     }
-}
     moz-card a, moz-toggle a, moz-select a, moz-fieldset a, setting-control a {
         color: #689d6a !important;
     }
     button[selected]::before,
     moz-page-nav-button[selected]::before {
+        background-color: #689d6a !important;
+    }
+    * {
+        border-radius: 0 !important;
+    }
+}
+@-moz-document url-prefix("about:addons") {
+    :root {
+        color-scheme: dark !important;
+        --button-background-color-primary: #689d6a !important;
+        --button-text-color-primary: #282828 !important;
+        --button-border-color-primary: #689d6a !important;
+    }
+    body, html, div, section, main {
+        background-color: #282828 !important;
+        color: #ebdbb2 !important;
+    }
+    h1, h2, h3, h4, h5, span, p, label, description {
+        color: #ebdbb2 !important;
+    }
+    a, .text-link {
+        color: #689d6a !important;
+    }
+    button, .button, .action-link {
+        color: #ebdbb2 !important;
+    }
+    input, textarea {
+        background-color: #1d2021 !important;
+        color: #ebdbb2 !important;
+        border: none !important;
+    }
+    .addon-card, .card, .list-item, .search-section {
+        background-color: #282828 !important;
+        border-radius: 0 !important;
+        box-shadow: var(--95convex) !important;
+    }
+    button[role="tab"] {
+        box-shadow: var(--95convex) !important;
+    }
+    toggle-button[aria-pressed="true"],
+    button.toggle-button[aria-pressed="true"] {
+        background-color: #689d6a !important;
+        border-color: transparent !important;
+    }
+    toggle-button,
+    button.toggle-button {
+        background-color: #1d2021 !important;
+        border-color: #504945 !important;
+    }
+    * {
+        border-radius: 0 !important;
+    }
+    button[selected]::before,
+    .category[selected]::before,
+    [selected]::before {
+        background-color: #689d6a !important;
+    }
+}
+
+/* ABOUT:LOGINS */
+@-moz-document url-prefix("about:logins") {
+    :root {
+        color-scheme: dark !important;
+        --background-color-canvas: #282828 !important;
+    }
+    body, html, div, section, main {
+        background-color: #282828 !important;
+        color: #ebdbb2 !important;
+    }
+    h1, h2, h3, h4, h5, span, p, label, description {
+        color: #ebdbb2 !important;
+    }
+    a, .text-link {
+        color: #689d6a !important;
+    }
+    input, textarea, input[type="search"], input[type="text"] {
+        background-color: #1d2021 !important;
+        color: #ebdbb2 !important;
+        border: none !important;
+        border-color: #504945 !important;
+        box-shadow: var(--95concave) !important;
+    }
+    header {
+        background-color: #282828 !important;
+    }
+    .login-item, .list-item, .login-card, .list {
+        background-color: #282828 !important;
+        border-radius: 0 !important;
+        box-shadow: var(--95convex) !important;
+    }
+    button[role="tab"] {
+        box-shadow: var(--95convex) !important;
+    }
+    .selected .list-item, .list-item:hover, .list-item[selected] {
+        background-color: #3c3836 !important;
+        color: #689d6a !important;
+    }
+    toggle-button[aria-pressed="true"],
+    button.toggle-button[aria-pressed="true"] {
+        background-color: #689d6a !important;
+        border-color: transparent !important;
+    }
+    toggle-button,
+    button.toggle-button {
+        background-color: #1d2021 !important;
+        border-color: #504945 !important;
+    }
+    button[selected]::before,
+    .category[selected]::before,
+    [selected]::before {
         background-color: #689d6a !important;
     }
     * {
