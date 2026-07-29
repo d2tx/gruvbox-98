@@ -1,0 +1,154 @@
+/* To make color changes, change the variables in both the userChrome AND userContent files */
+
+:root{
+/* NORMAL BROWSING COLORS */
+	--95grey:#282828;
+	--home-bground:#282828;
+	--3d-darkest:#1d2021;
+	--3d-dark:#504945;
+	--3d-light:#665c54;
+	--3d-lightest:#d5c4a1;
+	--urlbar-bg:#282828;
+	--button-colour:#ebdbb2;
+
+
+/* Defines the 3d effects. */
+	--95convex:inset -1px -1px var(--3d-darkest),inset 1px 1px var(--3d-lightest),inset -2px -2px var(--3d-dark),inset 2px 2px var(--3d-light);
+	--95concave:inset -1px -1px var(--3d-lightest),inset 1px 1px var(--3d-dark),inset -2px -2px var(--3d-light),inset 2px 2px var(--3d-darkest);
+	}
+
+/* PRIVATE BROWSING COLORS */
+#main-window[privatebrowsingmode="temporary"]{
+	--95grey:#3c3836;
+	--home-bground:#282828;
+	--3d-darkest:#1d2021;
+	--3d-dark:#3c3836;
+	--3d-light:#665c54;
+	--3d-lightest:#d5c4a1;
+	--urlbar-bg:#3c3836;
+	--button-colour:#ebdbb2;
+	}
+
+* {
+	font-family: "Terminus", "xos4 Terminus", monospace !important;
+	border-radius: 0 !important;
+}
+
+.tabbrowser-tab[label^="New Tab"] .tab-icon-image {
+      content: url("ff-std-alt.svg") !important;
+}
+
+#nav-bar:not([tabs-hidden="true"]) {
+    box-shadow: 0px -1px 0px 0px grey !important;
+}
+.browser-toolbar{
+    background-color: var(--95grey) !important;
+}
+.tab-background[selected]{
+ 	box-shadow: var(--95convex)  !important;
+	border-radius:0 !important;
+    background-color: var(--95grey) !important;
+    background-image: none !important;
+}
+.tab-background{
+    border-radius: 0px !important;
+}
+.tab-content{
+    color: var(--button-colour) !important;
+}
+
+#TabsToolbar .tabs-newtab-button:hover {
+    border-radius:0 !important;
+}
+.tabs-newtab-button:hover .toolbarbutton-icon {
+   border-radius:0 !important;
+}
+#urlbar-background, #urlbar, .urlbar-background{
+	background-color:var(--urlbar-bg) !important;
+    outline: none !important;
+    border:none !important;
+    border-radius: 0px !important;
+    box-shadow: var(--95concave) !important;
+}
+#urlbar[focused="true"]:not([suppress-focus-border]) > #urlbar-background, #searchbar:focus-within{
+    border:1px solid #458588 !important;
+}
+.toolbarbutton-1{
+    border-radius: 0px !important;
+    color: #ebdbb2 !important;
+    fill: var(--button-colour) !important;
+}
+.toolbarbutton-icon{
+    border-radius: 0px !important;
+}
+.toolbarbutton-1 > .toolbarbutton-icon, toolbar .toolbarbutton-1 > .toolbarbutton-text, toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack{
+    border-radius: 0px !important; 
+}
+.toolbarbutton-1:hover{
+    border-radius: 0px !important;
+}
+.toolbar-items{
+    background-color: var(--95grey) !important;
+}
+.PanelUI-subView{
+    background-color: var(--95grey) !important;
+    box-shadow: var(--95convex) !important;
+   /* color: black; */
+}
+.cui-widget-panel, .panel-no-padding{
+    --panel-border-radius: 0px !important;
+}
+
+.autoscroller {
+  background-image: size_all.png !important;
+}
+#urlbar-searchmode-switcher {
+	background-color: transparent !important;
+	border-radius: 0 !important;
+}
+
+#urlbar-results,
+.urlbarView,
+.urlbarView-row,
+.urlbarView-row-inner {
+	border-radius: 0 !important;
+}
+
+.urlbarView {
+	background-color: var(--95grey) !important;
+	color: var(--button-colour) !important;
+}
+
+.urlbarView-row {
+	background-color: transparent !important;
+	color: var(--button-colour) !important;
+}
+
+.urlbarView-url {
+	color: #689d6a !important;
+}
+
+.urlbarView-row[selected] {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+}
+
+.urlbarView-row[selected] .urlbarView-title,
+.urlbarView-row[selected] .urlbarView-tags,
+.urlbarView-row[selected] .urlbarView-secondary,
+.urlbarView-row[selected] .urlbarView-url {
+	color: #282828 !important;
+}
+
+#PopupAutoCompleteRichResult,
+.autocomplete-richlistbox,
+.autocomplete-richlistitem {
+	border-radius: 0 !important;
+	background-color: var(--95grey) !important;
+	color: var(--button-colour) !important;
+}
+
+.autocomplete-richlistitem[selected] {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+}

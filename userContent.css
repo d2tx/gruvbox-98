@@ -1,0 +1,77 @@
+/* To make color changes, change the variables in both the userChrome AND userContent files */
+
+:root{
+/* NORMAL BROWSING COLORS */
+	--95grey:#282828;
+	--home-bground:#282828;
+	--3d-darkest:#1d2021;
+	--3d-dark:#504945;
+	--3d-light:#665c54;
+	--3d-lightest:#d5c4a1;
+	--urlbar-bg:#282828;
+	--button-colour:#ebdbb2;
+
+/* Defines the 3d effects. */
+	--95convex:inset -1px -1px var(--3d-darkest),inset 1px 1px var(--3d-lightest),inset -2px -2px var(--3d-dark),inset 2px 2px var(--3d-light);
+	--95concave:inset -1px -1px var(--3d-lightest),inset 1px 1px var(--3d-dark),inset -2px -2px var(--3d-light),inset 2px 2px var(--3d-darkest);
+	}
+
+/* PRIVATE BROWSING COLORS */
+@-moz-document url-prefix(about:privatebrowsing) {
+	:root{
+	--95grey:#504945;
+	--home-bground:#282828;
+	--3d-darkest:#1d2021;
+	--3d-dark:#3c3836;
+	--3d-light:#665c54;
+	--3d-lightest:#d5c4a1;
+	--urlbar-bg:#3c3836;
+	--button-colour:#ebdbb2;
+		}
+	}
+
+@-moz-document url-prefix(about:home), url-prefix(about:newtab), url-prefix(about:privatebrowsing) {
+	.search-handoff-button{
+		background-color: var(--urlbar-bg) !important;
+		color:var(--button-colour) !important;
+		border-radius: 0px !important;
+		box-shadow: var(--95concave) !important;
+		border: none !important;
+	}
+	.tile{
+		border-radius: 0px !important;
+		box-shadow: var(--95concave) !important;
+	}
+	.card{
+		border-radius: 0px !important;
+		box-shadow: var(--95concave) !important;
+	}
+	body{ 
+		background-color:var(--home-bground) !important;
+		box-shadow:var(--95concave) !important;
+	}
+	.card-preview-image-outer{
+		border-radius: 0px !important;
+		box-shadow:var(--95concave) !important;
+		padding:2px !important;
+	}
+	.card-details{
+		box-shadow: var(--95concave)  !important;
+	}
+	.card-context{
+	visibility: hidden !important;	
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover){
+		border-radius: 0px;
+	}
+}
+@-moz-document url-prefix(about:home), url-prefix(about:newtab){
+	.logo {
+		background: url(ff-std.svg) no-repeat center !important;
+	}	
+}
+@-moz-document url-prefix(about:privatebrowsing){
+	.logo {
+		background: url(ff-priv.svg) no-repeat center !important;
+	}		
+}
