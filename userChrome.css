@@ -70,6 +70,13 @@
     border-radius: 0px !important;
     box-shadow: var(--95concave) !important;
 }
+
+#urlbar-input::selection,
+.urlbar-input-box input::selection {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+}
+
 #urlbar[focused="true"]:not([suppress-focus-border]) > #urlbar-background, #searchbar:focus-within{
     border:1px solid #458588 !important;
 }
@@ -87,6 +94,23 @@
 .toolbarbutton-1:hover{
     border-radius: 0px !important;
 }
+
+.subviewbutton:hover,
+.subviewbutton[open="true"],
+toolbarbutton.subviewbutton:not([disabled]):hover {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+	fill: #282828 !important;
+}
+
+.subviewbutton:hover .toolbarbutton-icon,
+.subviewbutton[open="true"] .toolbarbutton-icon,
+.subviewbutton:hover .toolbarbutton-text,
+.subviewbutton[open="true"] .toolbarbutton-text {
+	fill: #282828 !important;
+	color: #282828 !important;
+}
+
 .toolbar-items{
     background-color: var(--95grey) !important;
 }
@@ -105,48 +129,6 @@
 #urlbar-searchmode-switcher {
 	background-color: transparent !important;
 	border-radius: 0 !important;
-}
-
-#toolbar-menubar {
-	background-color: var(--95grey) !important;
-	color: var(--button-colour) !important;
-}
-
-menubar,
-menubar > menu {
-	background-color: var(--95grey) !important;
-	color: var(--button-colour) !important;
-	-moz-appearance: none !important;
-	border: none !important;
-}
-
-menubar > menu[_moz-menuactive="true"],
-menubar > menu:hover,
-menubar > menu[open] {
-	background-color: #689d6a !important;
-	color: #282828 !important;
-	-moz-appearance: none !important;
-	border: none !important;
-}
-
-menupopup,
-menupopup > menu,
-menupopup > menuitem {
-	background-color: var(--95grey) !important;
-	color: var(--button-colour) !important;
-	border-radius: 0 !important;
-}
-
-menupopup > menu[_moz-menuactive="true"],
-menupopup > menuitem[_moz-menuactive="true"],
-menupopup > menu:hover,
-menupopup > menuitem:hover {
-	background-color: #689d6a !important;
-	color: #282828 !important;
-}
-
-menuseparator {
-	border-top: 1px solid var(--3d-dark) !important;
 }
 
 #urlbar-results,
