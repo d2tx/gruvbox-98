@@ -91,16 +91,30 @@
         --in-content-button-text-color: #ebdbb2 !important;
         --in-content-border-color: #504945 !important;
         --in-content-focus-outline: #458588 !important;
+        --in-content-separator-color: #504945 !important;
         --button-bg: #3c3836 !important;
         --button-bg-hover: #504945 !important;
         --button-bg-active: #665c54 !important;
         --button-color: #ebdbb2 !important;
         --input-bg: #1d2021 !important;
         --input-border-color: #504945 !important;
+        --border-color: #504945 !important;
+        --panel-border-color: #504945 !important;
+        --vertical-separator-color: #504945 !important;
+        --category-nav-border-color: #504945 !important;
     }
     body, #preferences-body, .main-content, .pane-container {
         background-color: #282828 !important;
         color: #ebdbb2 !important;
+    }
+    *, *::before, *::after {
+        border-color: #504945 !important;
+    }
+    #categories, moz-page-nav, .nav-separator, hr {
+        border-color: #504945 !important;
+    }
+    setting-control, moz-fieldset, moz-card, moz-toggle, moz-select {
+        border-color: #504945 !important;
     }
     h1, h2, label, description, .description-deemphasized, span, p, div {
         color: #ebdbb2 !important;
@@ -277,6 +291,12 @@
         --button-background-color-primary: #689d6a !important;
         --button-text-color-primary: #282828 !important;
         --button-border-color-primary: #689d6a !important;
+        --in-content-border-color: #504945 !important;
+        --in-content-separator-color: #504945 !important;
+        --border-color: #504945 !important;
+        --panel-border-color: #504945 !important;
+        --vertical-separator-color: #504945 !important;
+        --category-nav-border-color: #504945 !important;
     }
     body, html, div, section, main {
         background-color: #282828 !important;
@@ -331,6 +351,12 @@
     [selected]::before {
         background-color: #689d6a !important;
     }
+    *, *::before, *::after {
+        border-color: #504945 !important;
+    }
+    * {
+        border-radius: 0 !important;
+    }
 }
 
 /* ABOUT:LOGINS */
@@ -338,6 +364,12 @@
     :root {
         color-scheme: dark !important;
         --background-color-canvas: #282828 !important;
+        --in-content-border-color: #504945 !important;
+        --in-content-separator-color: #504945 !important;
+        --border-color: #504945 !important;
+        --panel-border-color: #504945 !important;
+        --vertical-separator-color: #504945 !important;
+        --category-nav-border-color: #504945 !important;
     }
     body, html, div, section, main {
         background-color: #282828 !important;
@@ -395,6 +427,9 @@
     .category[selected]::before,
     [selected]::before {
         background-color: #689d6a !important;
+    }
+    *, *::before, *::after {
+        border-color: #504945 !important;
     }
     * {
         border-radius: 0 !important;
