@@ -148,6 +148,11 @@ toolbarbutton.subviewbutton:not([disabled]):hover {
 	color: var(--button-colour) !important;
 }
 
+.urlbarView-row:hover {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+}
+
 .urlbarView-url {
 	color: #689d6a !important;
 }
@@ -164,6 +169,13 @@ toolbarbutton.subviewbutton:not([disabled]):hover {
 	color: #282828 !important;
 }
 
+.urlbarView-row:hover .urlbarView-title,
+.urlbarView-row:hover .urlbarView-tags,
+.urlbarView-row:hover .urlbarView-secondary,
+.urlbarView-row:hover .urlbarView-url {
+	color: #282828 !important;
+}
+
 #PopupAutoCompleteRichResult,
 .autocomplete-richlistbox,
 .autocomplete-richlistitem {
@@ -172,7 +184,8 @@ toolbarbutton.subviewbutton:not([disabled]):hover {
 	color: var(--button-colour) !important;
 }
 
-.autocomplete-richlistitem[selected] {
+.autocomplete-richlistitem[selected],
+.autocomplete-richlistitem:hover {
 	background-color: #689d6a !important;
 	color: #282828 !important;
 }
