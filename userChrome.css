@@ -107,6 +107,48 @@
 	border-radius: 0 !important;
 }
 
+#toolbar-menubar {
+	background-color: var(--95grey) !important;
+	color: var(--button-colour) !important;
+}
+
+menubar,
+menubar > menu {
+	background-color: var(--95grey) !important;
+	color: var(--button-colour) !important;
+	-moz-appearance: none !important;
+	border: none !important;
+}
+
+menubar > menu[_moz-menuactive="true"],
+menubar > menu:hover,
+menubar > menu[open] {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+	-moz-appearance: none !important;
+	border: none !important;
+}
+
+menupopup,
+menupopup > menu,
+menupopup > menuitem {
+	background-color: var(--95grey) !important;
+	color: var(--button-colour) !important;
+	border-radius: 0 !important;
+}
+
+menupopup > menu[_moz-menuactive="true"],
+menupopup > menuitem[_moz-menuactive="true"],
+menupopup > menu:hover,
+menupopup > menuitem:hover {
+	background-color: #689d6a !important;
+	color: #282828 !important;
+}
+
+menuseparator {
+	border-top: 1px solid var(--3d-dark) !important;
+}
+
 #urlbar-results,
 .urlbarView,
 .urlbarView-row,
