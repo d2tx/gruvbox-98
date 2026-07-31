@@ -41,6 +41,9 @@
 #nav-bar:not([tabs-hidden="true"]) {
     box-shadow: 0px -1px 0px 0px #504945 !important;
 }
+#navigator-toolbox {
+    border-bottom: none !important;
+}
 .browser-toolbar{
     background-color: var(--95grey) !important;
 }
