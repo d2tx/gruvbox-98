@@ -4,10 +4,6 @@ A Firefox theme combining the gruvbox dark color scheme with a retro Windows 98 
 
 Based on [osem598/Firefox-98](https://github.com/osem598/Firefox-98).
 
-## Preview
-
-![screenshot](screenshot.png)
-
 ## Installation
 
 1. Go to `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
