@@ -12,8 +12,8 @@
 	--button-colour:#ebdbb2;
 
 /* Defines the 3d effects. */
-	--95convex:inset -1px -1px var(--3d-darkest),inset 1px 1px var(--3d-lightest),inset -2px -2px var(--3d-dark),inset 2px 2px var(--3d-light);
-	--95concave:inset -1px -1px var(--3d-lightest),inset 1px 1px var(--3d-dark),inset -2px -2px var(--3d-light),inset 2px 2px var(--3d-darkest);
+	--95convex:none;
+	--95concave:none;
 	}
 
 /* PRIVATE BROWSING COLORS */
@@ -412,6 +412,16 @@
     .selected .list-item, .list-item:hover, .list-item[selected] {
         background-color: #3c3836 !important;
         color: #689d6a !important;
+    }
+    new-list-item#new-login-list-item.list-item,
+    new-list-item.list-item,
+    ol > new-list-item,
+    .login-list-item {
+        background-color: #282828 !important;
+        color: #ebdbb2 !important;
+    }
+    ol {
+        background-color: #282828 !important;
     }
     toggle-button[aria-pressed="true"],
     button.toggle-button[aria-pressed="true"] {

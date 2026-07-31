@@ -13,8 +13,8 @@
 
 
 /* Defines the 3d effects. */
-	--95convex:inset -1px -1px var(--3d-darkest),inset 1px 1px var(--3d-lightest),inset -2px -2px var(--3d-dark),inset 2px 2px var(--3d-light);
-	--95concave:inset -1px -1px var(--3d-lightest),inset 1px 1px var(--3d-dark),inset -2px -2px var(--3d-light),inset 2px 2px var(--3d-darkest);
+	--95convex:none;
+	--95concave:none;
 	}
 
 /* PRIVATE BROWSING COLORS */
@@ -45,10 +45,11 @@
     background-color: var(--95grey) !important;
 }
 .tab-background[selected]{
- 	box-shadow: var(--95convex)  !important;
+	box-shadow: var(--95convex) !important;
 	border-radius:0 !important;
     background-color: var(--95grey) !important;
     background-image: none !important;
+    border-top: 2px solid #689d6a !important;
 }
 .tab-background{
     border-radius: 0px !important;
@@ -68,7 +69,7 @@
     outline: none !important;
     border:none !important;
     border-radius: 0px !important;
-    box-shadow: var(--95concave) !important;
+    box-shadow: none !important;
 }
 
 #urlbar-input::selection,
