@@ -280,6 +280,7 @@
     button[selected]::before,
     moz-page-nav-button[selected]::before {
         background-color: #689d6a !important;
+        border-radius: 0 !important;
     }
     * {
         border-radius: 0 !important;
